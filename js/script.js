@@ -13,7 +13,7 @@ let team = [
 },
 {
     img :"../img/walter-gordon-office-manager.jpg",
-    fullfullname : "Walter Gordon",
+    fullname : "Walter Gordon",
     role : "Office Manager"
 
 },
