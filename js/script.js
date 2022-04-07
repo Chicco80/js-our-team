@@ -44,7 +44,7 @@ let template ="";
 for(let i = 0; i < team.length; i++){
     // console.log(team[i].img)
     // console.log(team[i].role)
-    for (let key in team[i++]){
+    for (let key in team[i]){
     // console.log(key);
     // console.log(team[i][key])
     template = `
@@ -57,9 +57,14 @@ for(let i = 0; i < team.length; i++){
       <p>${team[i].role}</p>
      </div>
     </div> 
-      `
+      `;
       
+      
+  
     }
+    let teamContainer = document.querySelector(".team-container");
+    console.log("leggi prima",template)
+    teamContainer.innerHTML += template;
+    console.log("leggi",template)
+
 }
-template = document.querySelector(".team-container").innerHTML += template;
-console.log("leggi",template)
